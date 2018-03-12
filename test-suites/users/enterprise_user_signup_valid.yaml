@@ -21,7 +21,7 @@ auth: NONE
 testCases:
   # valid email
   - id: 1
-    body: '{"name": "fn1 ln", "email": "{{@RandomAlphanumeric | 3}}@fxlabs.io", "password": "12345678", "company": "{{@RandomAlphanumeric | 3}}"}'
+    body: '{"name": "fn1 ln", "email": "{{@RandomAlphanumeric | 3}}@fxlabsio", "password": "12345678", "company": "{{@RandomAlphanumeric | 3}}"}'
   
 assertions:
   - "@StatusCode == 200"
