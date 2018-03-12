@@ -17,11 +17,12 @@ auth: NONE
 # password: min 8 chars
 # company: min 3 chars, unique
 # @Response --> boolean
+# "email": "{{@RandomAlphanumeric | 3}}@fxlabsio", 
 
 testCases:
   # valid email
   - id: 1
-    body: '{"name": "", "email": "{{@RandomAlphanumeric | 3}}@fxlabsio", "password": "12345678", "company": "{{@RandomAlphanumeric | 3}}"}'
+    body: '{"name": "", "password": "12345678", "company": "{{@RandomAlphanumeric | 3}}"}'
   
 assertions:
   - "@StatusCode == 200"
