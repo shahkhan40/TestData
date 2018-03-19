@@ -45,5 +45,5 @@ jobs:
     tags:
       - V1
     regions: FxLabs/US_WEST_1
-    issueTracker: FxLabs/Jira2
+    issueTracker: FxLabs/Jira
     
